@@ -5,29 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<body class="flex flex-col h-screen w-screen bg-[var(--Very-dark-blue-main-background)] items-center justify-center p-4 lg:flex-row-reverse lg:p-40">    
+  <div class="rounded-t-lg bg-[var(--Dark-violet-accent)] w-full h-full lg:w-1/2 lg:rounded-r-lg lg:max-w-md lg:max-h-[28rem]">
+    <div class="rounded-t-lg opacity-40 bg-[url('./images/image-header-mobile.jpg')] w-full h-full bg-cover bg-no-repeat lg:bg-[url('./images/image-header-desktop.jpg')] lg:rounded-r-lg lg:rounded-tl-none"></div>  
   </div>
+  <main class="flex flex-col w-full h-full items-center justify-center text-center lg:text-left p-5 lg:p-16 bg-[var(--Dark-desaturated-blue-card-background)] rounded-b-lg lg:rounded-l-lg lg:w-1/2 lg:max-w-md lg:max-h-[28rem]">
+    <h1 class="text-white font-bold text-3xl mb-4">Get <span class="text-[var(--Soft-violet-accent)]">insights</span> that help your business grow.</h1>
+  
+    <p class="font-normal text-md text-[var(--Slightly-transparent-white-main-paragraph)] mb-5">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+    
+    <div class="flex flex-col lg:flex-row lg:text-left lg:justify-between lg:mt-16 lg:w-full">
+      <div class="flex flex-col">
+        <strong class="font-bold text-2xl text-white mb-1">10k+</strong>
+        <span class="font-normal text-xs text-[var(--Slightly-transparent-white-stat-headings)] font-lexend mb-4 tracking-[.150em]">COMPANIES</span>
+      </div>
+      <div class="flex flex-col">
+        <strong class="font-bold text-2xl text-white mb-1">314</strong>
+        <span class="font-normal text-xs text-[var(--Slightly-transparent-white-stat-headings)] font-lexend mb-4 tracking-[.150em]">TEMPLATES</span>
+      </div>
+      <div class="flex flex-col">
+        <strong class="font-bold text-2xl text-white mb-1">12m+</strong>
+        <span class="font-normal text-xs text-[var(--Slightly-transparent-white-stat-headings)] font-lexend mb-4 tracking-[.150em]">QUERIES</span>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

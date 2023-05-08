@@ -1,0 +1,33 @@
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --Very-dark-blue-main-background: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue-card-background: hsl(244, 38%, 16%);
+  --Soft-violet-accent: hsl(277, 64%, 61%);
+  --Dark-violet-accent: hsl(278, 94%, 20%);  
+
+  /* ### Neutral */
+ 
+  --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-lexend {
+  font-family: 'Lexend Deca', sans-serif ;
+}
